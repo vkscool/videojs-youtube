@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Media Youtube</title>
+
+  <link type="text/css" rel="stylesheet" href="../libs/video-js.css" />
+
+  <!-- LOAD VIDEO.JS SOURCE FILE -->
+  <script src="../libs/video.dev.js"></script>
+  
+  <!-- <script>videojs.options.techOrder = ["youtube"];videojs.options.youtube.swf = "libs/video-js.swf";</script> -->
+  
+  <!-- LOAD VIDEO.JS MEDIA YOUTUBE FILE -->
+  <script src="../src/youtube.js"></script>
+  
+<style>
+.wideo-show{
+ width:100%;
+}
+.wideo-show .vd{
+ float:left;
+ margin-right:10px;
+}
+</style>
+</head>
+<body>
+  
+  <div class="wideo-show">
+     <div class="vd">
+	  
+	 </div>
+	 <div class="vd"> 
+	  <video id="vid2" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="640" height="360" data-setup='{"techOrder": ["youtube"]}'>
+	  			<source src="https://www.youtube.com/watch?v=w_gSMi0Wj_s" type='video/youtube' />
+	  </video>
+	 </div>
+  </div>
+  
+</body>
+</html>
